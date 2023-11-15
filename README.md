@@ -65,3 +65,96 @@ Case Types:
     SentenceCase,
     InverseCase
 
+
+
+
+Swagger Json :
+
+{
+"openapi": "3.0.1",
+"info": {
+"title": "Your API",
+"version": "v1"
+},
+"paths": {
+"/api/app/user/update-profile-picture": {
+"put": {
+"tags": [
+"User App Service"
+],
+"requestBody": {
+"content": {
+"multipart/form-data": {
+"schema": {
+"type": "object",
+"properties": {
+"file": {
+"type": "string",
+"format": "binary"
+}
+}
+},
+"encoding": {
+"file": {
+"style": "form"
+}
+}
+}
+}
+},
+"responses": {
+"200": {
+"description": "Success",
+"content": {
+"text/plain": {
+"schema": {
+"type": "boolean"
+}
+},
+"application/json": {
+"schema": {
+"type": "boolean"
+}
+},
+"text/json": {
+"schema": {
+"type": "boolean"
+}
+}
+}
+}
+}
+}
+},
+"/api/app/user/get-user-name": {
+"get": {
+"tags": [
+"User App Service"
+],
+"responses": {
+"200": {
+"description": "Success",
+"content": {
+"text/plain": {
+"schema": {
+"type": "string"
+}
+},
+"application/json": {
+"schema": {
+"type": "string"
+}
+},
+"text/json": {
+"schema": {
+"type": "string"
+}
+}
+}
+}
+}
+}
+}
+},
+"components": {}
+}
