@@ -4,7 +4,10 @@
 
 The `BE.Auto.Api` module streamlines the configuration and automation of API-related settings for ASP.NET Core applications. This module simplifies the process of generating API controllers automatically from application services, offering features for effortless route generation, flexible case formatting, and comprehensive Swagger documentation.
 
-
+## Installation
+```csharp
+NuGet\Install-Package BE.Auto.Api -Version 1.0.0
+```
 ## Configuration
 
 Configure the module in your application startup using the following code:
